@@ -24,3 +24,5 @@ Open doors:
 ```
 </p> 
 </details>
+
+<a href="http://rosettacode.org/wiki/100_doors">Original Problem</a>
