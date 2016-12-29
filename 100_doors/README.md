@@ -24,4 +24,4 @@ Open doors:
 ```
 </details>
 
-<a href="http://rosettacode.org/wiki/100_doors">Original Problem</a>
+[Original Problem](http://rosettacode.org/wiki/100_doors)
