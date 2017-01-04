@@ -4,8 +4,6 @@
 
 This is where I will put my sample projects, just for fun, in many different languages.
 
-Any challenges are welcome, and suggestions would be great!
+If you have any projects you wish to add, submit a issue or PR!
 
-Some java projects may require a library named **objectdraw**.  This can be found with a quick google search.
-
-Note: I am attempting to use OOP more and more, so there will be what could be seen as too many functions.
+Some java projects may require a library named **objectdraw**.  It can be found [here](http://eventfuljava.cs.williams.edu/library/).
