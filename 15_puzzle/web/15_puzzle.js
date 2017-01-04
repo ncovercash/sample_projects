@@ -66,7 +66,7 @@ function init() {
 	nums = Array.apply(null, Array(16)).map(function (_, i) {return i;});
 
 	// shuffle
-	// nums = shuffle(nums);
+	nums = shuffle(nums);
 	refreshTable();
 }
 
