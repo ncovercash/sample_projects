@@ -13,6 +13,7 @@
 			echo "<tr>";
 			for ($col=1; $col <= 4; $col++) {
 				echo "<td index=\"$index\" row=\"$row\" col=\"$col\">-</td> ";
+				$index++;
 			}
 			echo "</tr>";
 		}
