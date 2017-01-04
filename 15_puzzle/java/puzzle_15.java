@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class puzzle_15 extends WindowController {
 	// set in stone
-	final private int ROWS = 20;
-	final private int COLS = 20;
+	final private int ROWS = 4;
+	final private int COLS = 4;
 	private int colWidth, rowWidth;
 
 	final private Color grey=new Color(0xeeeeee), white=new Color(0xffffff);
