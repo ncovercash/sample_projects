@@ -11,3 +11,5 @@ int main() {
     std::copy_n(std::istream_iterator<int>(std::cin), numbers_count, std::begin(numbers));
     std::cout<< std::accumulate(numbers.begin(),numbers.end(),0,std::plus<int>())<<std::endl;
 }
+
+// credit for this code goes to hicklc01
