@@ -19,7 +19,7 @@ public class puzzle_15 extends WindowController {
 
 	public static void main(String[] args) {
 		// objectdraw init
-		new puzzle_15().startController(512,512+44); // 44 is correction
+		new puzzle_15().startController(1024,1024+44); // 44 is correction
 	}
 
 	public void begin() {
