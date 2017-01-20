@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class puzzle_15 extends WindowController {
 	// set in stone
-	final private int ROWS = 4;
-	final private int COLS = 4;
+	final private int ROWS = 2;
+	final private int COLS = 2;
+	final private int NUM_SHUFFLES = (int)Math.pow(ROWS,COLS); // recommended, but can be whatever
 	private int colWidth, rowWidth;
 
 	final private Color grey=new Color(0xeeeeee), white=new Color(0xffffff);
@@ -26,26 +27,19 @@ public class puzzle_15 extends WindowController {
 		// have to use this method bc objectdraw
 		colWidth = canvas.getWidth()/COLS;
 		rowWidth = canvas.getHeight()/ROWS;
-		shuffleVals();
+		newVals();
 		initBoxes();
+		shufflePuzzle();
+		showText();
 	}
 
-	public void shuffleVals() {
+	public void newVals() {
 		// create 1D array
 		int[] tmpVals = new int[ROWS*COLS];
 		for (int i=0; i<tmpVals.length; i++) {
-			tmpVals[i] = i;
+			tmpVals[i] = i+1;
 		}
-
-		// shuffle
-		Random rnd = new Random();
-		for (int i = tmpVals.length - 1; i > 0; i--) {
-			int index = rnd.nextInt(i + 1);
-			// Simple swap
-			int tmp = tmpVals[index];
-			tmpVals[index] = tmpVals[i];
-			tmpVals[i] = tmp;
-		}
+		tmpVals[tmpVals.length-1] = 0;
 
 		// apply
 		for (int i=0; i<tmpVals.length; i++) {
@@ -67,6 +61,7 @@ public class puzzle_15 extends WindowController {
 				boxText[row][col] = new Text(boxVals[row][col], (colWidth*col)+(colWidth/2), (rowWidth*row)+(rowWidth/2), canvas);
 				boxText[row][col].setFontSize(colWidth/2);
 				boxText[row][col].move(-boxText[row][col].getWidth()/2, -boxText[row][col].getHeight()/2);
+				boxText[row][col].hide(); // unhid after initial shuffling
 
 				// 0 is our empty spot
 				if (boxVals[row][col] == 0) {
@@ -75,6 +70,46 @@ public class puzzle_15 extends WindowController {
 					blank[1] = col;
 					boxes[row][col].setColor(white);
 				}
+			}
+		}
+	}
+
+	public void shufflePuzzle() {
+		for (int i=0; i<NUM_SHUFFLES; i++) {
+			double rand = Math.random();
+			if (rand < 0.25) {
+				if (blank[0] != 0) {
+					moveWithOffset(-1,0);
+				} else {
+					i--;
+				}
+			} else if (rand < 0.5) {
+				if (blank[1] != COLS-1) {
+					moveWithOffset(0,1);
+				} else {
+					i--;
+				}
+			} else if (rand < 0.75) {
+				if (blank[0] != ROWS-1) {
+					moveWithOffset(1,0);
+				} else {
+					i--;
+				}
+			} else {
+				if (blank[1] != 0) {
+					moveWithOffset(0,-1);
+				} else {
+					i--;
+				}
+			}
+		}
+		checkWinner();
+	}
+
+	public void showText() {
+		for (Text[] ts : boxText) {
+			for (Text t : ts) {
+				t.show();
 			}
 		}
 	}
@@ -114,7 +149,7 @@ public class puzzle_15 extends WindowController {
 		blank[1] += offsetY;
 	}
 
-	public void checkWinner() {
+	public boolean checkWinner() {
 		boolean winning=true;
 		for (int row=0; row<ROWS; row++) {
 			for (int col=0; col<COLS; col++) {
@@ -124,8 +159,12 @@ public class puzzle_15 extends WindowController {
 			}
 		}
 		if (winning) {
-			shuffleVals();
+			canvas.clear();
+			newVals();
 			initBoxes();
+			shufflePuzzle();
+			showText();
 		}
+		return winning;
 	}
 }
