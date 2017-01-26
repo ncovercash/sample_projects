@@ -23,8 +23,6 @@ def printPuzzle():
 		print(printme)
 
 def move(x, y):
-	print (blankPos)
-	print(puzzle)
 	if (x == -1 and y == 0):
 		if blankPos[1] != 0:
 			puzzle[blankPos[0]][blankPos[1]] = puzzle[blankPos[0]][blankPos[1]-1]
@@ -100,7 +98,7 @@ while True:
 	while True:
 		printPuzzle()
 
-		direction = raw_input(">>> ")
+		direction = input(">>> ")
 
 		if direction == "N":
 			move(0,-1)
@@ -114,5 +112,5 @@ while True:
 		if check():
 			printPuzzle()
 			print("YOU WIN!!")
-			raw_input("Press enter to restart!")
+			input("Press enter to restart!")
 			break;
