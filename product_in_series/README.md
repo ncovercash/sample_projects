@@ -32,4 +32,4 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 ```
 </details>
 
-[Original Problem](https://projecteuler.net/problem=6)
+[Original Problem](https://projecteuler.net/problem=8)
