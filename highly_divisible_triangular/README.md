@@ -25,4 +25,4 @@ What is the value of the first triangle number to have over five hundred divisor
 ```
 </details>
 
-[Original Problem](https://projecteuler.net/problem=10)
+[Original Problem](https://projecteuler.net/problem=12)
