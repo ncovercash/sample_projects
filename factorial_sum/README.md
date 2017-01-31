@@ -14,4 +14,4 @@ Find the sum of the digits in the number 100!
 ```
 </details>
 
-[Original Problem](https://projecteuler.net/problem=13)
+[Original Problem](https://projecteuler.net/problem=20)
