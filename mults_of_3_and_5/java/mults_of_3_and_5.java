@@ -14,7 +14,9 @@ public class mults_of_3_and_5 {
 	private static int get5Sum(int max) {
 		int total=0;
 		for (int i=0; i<max; i+=5) {
-			total += i;
+			if (i % 3 != 0) {
+				total += i;
+			}
 		}
 		return total;
 	}
