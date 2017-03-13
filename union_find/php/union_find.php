@@ -1,11 +1,12 @@
 <?
 class UnionFind {
 	protected $nodes;
-
+	protected $size;
 	public function __construct(int $n) {
 		$this->nodes = Array();
 		for ($i=0; $i < $n; $i++) { 
 			$this->nodes[$i] = $i;
+			$this->size[$i] = 1;
 		}
 	}
 
@@ -17,7 +18,7 @@ class UnionFind {
 		if ($a >= count($this->nodes) || $b >= count($this->nodes)) {
 			throw new Exception("Invalid arguments given to UnionFind::connected.");
 		}
-		return $this->nodes[$a] == $this->nodes[$b];
+		return $this->getRoot($a) == $this->getRoot($b);
 	}
 
 	public function count() : int {
@@ -28,33 +29,37 @@ class UnionFind {
 		return count($components);
 	}
 
-	protected function find(int $n) : int {
+	public function getParentId(int $n) : int {
 		if ($n >= count($this->nodes)) {
-			throw new Exception("Invalid arguments given to UnionFind::find.");
+			throw new Exception("Invalid arguments given to UnionFind::getParentId.");
 		}
 		return $this->nodes[$n];
 	}
 
-	public function getComponentId(int $n) : int {
-		if ($n >= count($this->nodes)) {
-			throw new Exception("Invalid arguments given to UnionFind::getComponentId.");
+	public function getRoot(int $n) : int {
+		while ($this->getParentId($n) != $n) {
+			$this->nodes[$n] = $this->getParentId($this->getParentId($n));
+			$n = $this->getParentId($n);
 		}
-		return $this->nodes[$n];
+		return $n;
 	}
 
 	public function union(int $a, int $b) : void {
 		if ($a >= count($this->nodes) || $b >= count($this->nodes)) {
 			throw new Exception("Invalid arguments given to UnionFind::union.");
 		}
-		if ($this->connected($a, $b)) {
+		if ($this->connected($a,$b)) {
 			return;
 		}
-		$newComponent = $this->nodes[$a];
-		$mergeComponent = $this->nodes[$b];
-		for ($i=0; $i < count($this->nodes); $i++) { 
-			if ($this->nodes[$i] == $mergeComponent) {
-				$this->nodes[$i] = $newComponent;
-			}
+		$i = $this->getRoot($a);
+		$j = $this->getRoot($b);
+		// smaller trees, weighting
+		if ($this->sz[$i] < $this->sz[$j]) {
+			$this->nodes[$i] = $j;
+			$this->sz[$i]+=$this->sz[$j];
+		} else {
+			$this->nodes[$j] = $i;
+			$this->sz[$j]+=$this->sz[$i];
 		}
 	}
 }
@@ -63,4 +68,12 @@ $test = new UnionFind(10);
 echo $test->union(1,2);
 echo $test->union(3,2);
 echo $test->union(1,3);
+echo $test->union(9,6);
+echo $test->union(9,4);
+echo $test->union(6,7);
+echo $test->union(8,7);
+echo $test->union(7,8);
+echo $test->union(0,8);
+echo $test->union(4,1);
 echo $test;
+echo $test->connected(0,1);
