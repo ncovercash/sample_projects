@@ -359,10 +359,14 @@ function permute_multiple(array &$arr) {
 	$puzzle_letters = array_slice(NUMTOALPHA, 0, count($arr));
 	for ($i=0; $i < $num_iterations;) { 
 		$rand_flow = $puzzle_letters[array_rand($puzzle_letters)];
-		$i += permute($rand_flow, $arr);
+		// $i += permute($rand_flow, $arr);
+		permute($rand_flow, $arr);
+		$i++;
+		echo $i."\n";
+		display2DArray($arr);
 	}
 }
 
-$puzzle = generateStartingPuzzle(5);
+$puzzle = generateStartingPuzzle(6);
 permute_multiple($puzzle);
 display2DArray($puzzle);
