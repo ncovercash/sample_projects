@@ -17,7 +17,7 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 <details> 
 <summary>Expected Result</summary>
 ```
-
+932718654
 ```
 </details>
 
