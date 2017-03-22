@@ -11,6 +11,7 @@ Find the pair of pentagonal numbers, Pj and Pk, for which their sum and differen
 <details> 
 <summary>Expected Result</summary>
 ```
+5482660
 ```
 </details>
 
