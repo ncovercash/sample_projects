@@ -21,6 +21,7 @@ How many Lychrel numbers are there below ten‐thousand?
 <details> 
 <summary>Expected Result</summary>
 ```
+249
 ```
 </details>
 
