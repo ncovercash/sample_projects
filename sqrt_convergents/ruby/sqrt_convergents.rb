@@ -1,3 +1,4 @@
+start = Time.now
 total = 0
 num = 0
 denom = 1
@@ -15,3 +16,4 @@ for i in 0..1000
 end
 
 puts total
+puts Time.now - start
