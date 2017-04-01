@@ -1,46 +1,44 @@
 <?php
-
-// adapted from rosetta code's task
-// returns array, [0] = numerator, [1] = denominator
-function asRational($val, $tolerance=1.e-6) : array {
-    if ($val == (int)$val) {
-        // integer
-        return Array($val,1);
-    }
-    $h1=1;
-    $h2=0;
-    $k1=0;
-    $k2=1;
-    $b = 1 / $val;
-    do {
-        $b = 1 / $b;
-        $a = floor($b);
-        $aux = $h1;
-        $h1 = $a * $h1 + $h2;
-        $h2 = $aux;
-        $aux = $k1;
-        $k1 = $a * $k1 + $k2;
-        $k2 = $aux;
-        $b = $b - $a;
-    } while (abs($val-$h1/$k1) > $val * $tolerance);
-    return array($h1,$k1);
-}
-
-// returns the denominator after x iterations, x=1 returns 2
-function getDenominatorTimes1000(int $iterations) : float {
-	if ($iterations == 1) {
-		return 2000;
-	}
-	return (2000+(1000000/getDenominatorTimes1000($iterations-1)));
-}
-
+$start = microtime(true);
 $total = 0;
+$num = gmp_init(0);
+$den = gmp_init(1);
 
-// for ($i=1; $i <= 10000; $i++) { 
-	// $rational = asRational(1000+(1000000/getDenominator($i)));
-	// if (strlen((string)$ratonal[0]) > strlen((string)$ratonal[1])) {
-// 		$total++;
-// 	}
-// }
-// var_dump(getDenominatorTimes1000(2));
-var_dump(asRational((1000+(1000000/getDenominatorTimes1000(99)))/1000, 0));
+/*
+ * Proof this works:
+ * ln       |   num     |   denom   |   oldNum
+ * 33       |   0       |   1       |   0
+ * 34       |   1       |   1       |   0
+ * 35       |   1       |   2       |   0
+ * 36       |   1       |   2       |   0 
+ * 
+ * // 1/2 + 1 = 3/2
+ *          |           |           |
+ * 33       |   1       |   2       |   1
+ * 34       |   2       |   2       |   1
+ * 35       |   2       |   4       |   1
+ * 36       |   2       |   5       |   1 
+ * 
+ * // 2/5 + 1 = 7/5
+ *          |           |           |
+ * 33       |   2       |   5       |   2
+ * 34       |   5       |   5       |   2
+ * 35       |   5       |   10      |   2
+ * 36       |   5       |   12      |   2 
+ *
+ * // 5/12 + 1 = 17/12
+ */
+
+for ($i=0; $i < 1000; $i++) { 
+    $oldNum = gmp_init(gmp_strval($num));
+    $num = $den;
+    $den = gmp_mul($den, gmp_init(2));
+    $den = gmp_add($den, $oldNum);
+    $realNum = gmp_add($den, $num);
+    if (strlen(gmp_strval($realNum)) > strlen(gmp_strval($den))) {
+        $total++;
+    }
+}
+
+var_dump($total);
+echo microtime(true) - $start;
