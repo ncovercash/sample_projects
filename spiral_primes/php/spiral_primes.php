@@ -64,6 +64,10 @@ class PrimeNumbers {
 	public function __toString() : string {
 		return var_export($this->primes, true);
 	}
+
+	public function getLength() : int {
+		return count($this->primes);
+	}
 }
 
 function getCornersOfSpiralLayer(int $layer) : array {
@@ -118,8 +122,6 @@ $layers = 2;
 
 ini_set("memory_limit", -1);
 
-getDiagonalsOfSpiral(5, $primeCache);
-var_dump($primeCache);
 
 while (getPercentPrimesOfSpiral($layers, $primes, $primeCache) >= 0.1) {
 	$nprimes = getNumPrimes(getDiagonalsOfSpiral($layers, $primeCache), $primes);
@@ -149,7 +151,11 @@ while (getPercentPrimesOfSpiral($layers, $primes, $primeCache) >= 0.1) {
 	} else {
 		$layers++;
 	}
-	echo $layers."\n"; 
 }
 
+echo $primes->getLength();
+
 var_dump(getSideLengthFromNumLayers($layers));
+
+// 30 seconds, leaves something to be desired...
+
