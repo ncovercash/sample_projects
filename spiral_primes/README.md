@@ -19,6 +19,7 @@ If one complete new layer is wrapped around the spiral above, a square spiral wi
 <details> 
 <summary>Expected Result</summary>
 ```
+26241
 ```
 </details>
 
