@@ -317,7 +317,7 @@ function isHeadOfFlow(int $row, int $col, $flow, array $arr) : bool {
 	return isHead($row, $col, $arr) && $arr[$row][$col][0] == $flow;
 }
 
-function getHeads($letter, array $arr) : array {
+function getHeads(string $letter, array $arr) : array {
 	$newArr = Array();
 	$highest = 0;
 	for ($row=0; $row < count($arr); $row++) {
@@ -340,7 +340,7 @@ function getHeads($letter, array $arr) : array {
 	return $newArr;
 }
 
-function getLength($letter, array $arr) : int {
+function getLength(string $letter, array $arr) : int {
 	$length = 0;
 
 	foreach ($arr as $r) {
@@ -355,7 +355,39 @@ function getLength($letter, array $arr) : int {
 }
 
 function permute_multiple(array &$arr) {
-	$num_iterations = count($arr)**5;
+	$num_iterations;
+	switch (count($arr)) {
+		case 5:
+			$num_iterations = 5**5;
+			break;
+		case 6:
+			$num_iterations = (6**5)/2;
+			break;
+		case 7:
+			$num_iterations = (7**5)/3;
+			break;
+		case 8:
+			$num_iterations = 8**4;
+			break;
+		case 9:
+			$num_iterations = 9**4;
+			break;
+		case 10:
+			$num_iterations = 10**4;
+			break;
+		case 11:
+			$num_iterations = (11**4)/2;
+			break;
+		case 12:
+			$num_iterations = (12**4)/2;
+			break;
+		case 13:
+			$num_iterations = (13**4)/2;
+			break;
+		case 14:
+			$num_iterations = (14**4)/2;
+			break;
+	}
 	$puzzle_letters = array_slice(NUMTOALPHA, 0, count($arr));
 	for ($i=0; $i < $num_iterations;) { 
 		$rand_flow = $puzzle_letters[array_rand($puzzle_letters)];
