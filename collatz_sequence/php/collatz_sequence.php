@@ -1,27 +1,30 @@
 <?php
 
+$start = microtime(1);
+
 $max = Array(0,0);
 
-for ($i=1; $i < 1000000; $i++) {
+for ($i=600001; $i < 10000000; $i+=2) {
 	$new = $i;
-	$steps = Array($new);
+	$totalSteps = 0;
 	while ($new != 1) {
 		switch ($new % 2) {
 			case 0:
-				array_push($steps, $new/2);
+				$totalSteps++;
 				$new /= 2;
 				break;
 			case 1:
-				array_push($steps, (3*$new)+1);
+				$totalSteps++;
 				$new *= 3;
 				$new++;
 				break;
 		}
 	}
-	if (count($steps) > $max[0]) {
-		$max[0] = count($steps);
+	if ($totalSteps > $max[0]) {
+		$max[0] = $totalSteps;
 		$max[1] = $i;
 	}
 }
 
 var_dump($max);
+echo microtime(1) - $start;
