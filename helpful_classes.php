@@ -225,7 +225,7 @@ class Math {
 	}
 
 	/** static int factorial( int $a )
-	 *   Returns factorial ($a!)
+	 *   Returns factorial ($a!) = 1 * 2 * 3 ... $a
 	 *  @param int $in
 	 *   number to calculate the number of permutations
 	 *  @return int
