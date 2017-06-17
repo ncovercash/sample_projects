@@ -1,10 +1,11 @@
 <?php
 
-
 $curVal=0;
 $curAdd=0;
 
 $found=false;
+
+$start = microtime(true);
 
 function getFactors($in) {
 	$factors = Array();
@@ -22,10 +23,11 @@ function getFactors($in) {
 while ($curVal >= 0 && !$found) { // overflow detection
 	$curAdd++;
 	$curVal+=$curAdd;
-	echo $curVal." ".getFactors($curVal)."\n";
+	// echo $curVal." ".getFactors($curVal)."\n";
 	if (getFactors($curVal) >= 500) {
-		$found = true;
+		break;
 	}
 }
 
 echo $curVal."\n";
+echo "Took ".(microtime(true)-$start)." seconds.\n";

@@ -4,16 +4,17 @@ $string="73167176531330624919225119674426574742355349194934969835203127745063262
 
 $highest=0;
 
+$start = microtime(true);
+
 for ($i=0; $i < strlen($string)-12; $i++) { 
 	$digits = substr($string, $i, 13);
 	$digitsArr = str_split($digits);
-	$newNum = 1;
-	foreach ($digitsArr as $digit) {
-		$newNum = $newNum * intval($digit);
-	}
+	$newNum = array_reduce($digitsArr, function ($a, $b) {
+		return $a*$b;
+	}, 1);
 	if ($newNum > $highest) {
 		$highest = $newNum;
 	}
 }
-
+echo microtime(true)-$start."\n";
 echo $highest;
