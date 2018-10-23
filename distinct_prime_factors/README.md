@@ -15,9 +15,9 @@ Find the first four consecutive integers to have four distinct prime factors eac
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 1340433
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=47)

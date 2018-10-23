@@ -31,9 +31,9 @@ What is the greatest product of four adjacent numbers in the same direction (up,
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 70600674
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=11)

@@ -13,9 +13,9 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 840
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=39)

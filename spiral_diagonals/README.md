@@ -16,9 +16,9 @@ What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed 
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 669171001
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=28)

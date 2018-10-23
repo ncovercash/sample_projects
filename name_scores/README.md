@@ -14,9 +14,9 @@ What is the total of all the name scores?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 871198282
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=22)

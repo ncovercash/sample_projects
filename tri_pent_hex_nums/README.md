@@ -12,9 +12,9 @@ Find the next triangle number that is also pentagonal and hexagonal.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 1533776805
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=45)

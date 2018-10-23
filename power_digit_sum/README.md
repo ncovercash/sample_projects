@@ -6,9 +6,9 @@ What is the sum of the digits of the number 2^1000?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 1366
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=16)

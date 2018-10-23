@@ -6,9 +6,9 @@ What is the 10 001st prime number?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 104743
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=7)

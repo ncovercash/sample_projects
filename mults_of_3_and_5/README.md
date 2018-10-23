@@ -6,9 +6,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 233168
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=1)

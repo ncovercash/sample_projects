@@ -8,9 +8,9 @@ NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 748317
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=37)

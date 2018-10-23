@@ -8,9 +8,9 @@ What is the largest n-digit pandigital prime that exists?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 7652413
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=41)

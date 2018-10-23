@@ -10,9 +10,9 @@ HINT: Some products can be obtained in more than one way so be sure to only incl
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 100
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=33)

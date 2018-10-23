@@ -18,9 +18,9 @@ If one complete new layer is wrapped around the spiral above, a square spiral wi
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 26241
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=58)

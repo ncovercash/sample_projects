@@ -36,9 +36,9 @@ NOTE: As there are only 16384 routes, it is possible to solve this problem by tr
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 1074
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=18)

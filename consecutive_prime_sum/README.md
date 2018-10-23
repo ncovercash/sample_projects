@@ -12,9 +12,9 @@ Which prime, below one-million, can be written as the sum of the most consecutiv
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 997651
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=50)

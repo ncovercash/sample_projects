@@ -10,9 +10,9 @@ Using words.txt (on source below), a 16K text file containing nearly two-thousan
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 162
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=42)

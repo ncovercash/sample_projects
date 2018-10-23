@@ -14,9 +14,9 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 25164150
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=6)

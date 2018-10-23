@@ -12,9 +12,9 @@ How many different ways can £2 be made using any number of coins?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 73682
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=31)

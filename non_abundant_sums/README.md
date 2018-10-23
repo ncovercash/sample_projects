@@ -12,9 +12,9 @@ Find the sum of all the positive integers which cannot be written as the sum of 
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 4179871
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=23)

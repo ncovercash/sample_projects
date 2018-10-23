@@ -42,9 +42,9 @@ How many hands does Player 1 win?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 376
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=54)
