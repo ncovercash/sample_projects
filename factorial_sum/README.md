@@ -9,9 +9,9 @@ Find the sum of the digits in the number 100!
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 648
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=20)

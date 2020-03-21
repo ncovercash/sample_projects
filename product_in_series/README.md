@@ -27,9 +27,9 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 23514624000
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=8)

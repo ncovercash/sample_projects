@@ -10,9 +10,9 @@ Find the pair of pentagonal numbers, Pj and Pk, for which their sum and differen
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 5482660
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=44)

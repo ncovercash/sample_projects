@@ -9,9 +9,9 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 31626
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=21)

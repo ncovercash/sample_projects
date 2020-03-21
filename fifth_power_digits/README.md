@@ -16,9 +16,9 @@ Find the sum of all the numbers that can be written as the sum of fifth powers o
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 443839
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=30)

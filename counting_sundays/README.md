@@ -15,9 +15,9 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 171
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=19)

@@ -15,9 +15,9 @@ What is the smallest odd composite that cannot be written as the sum of a prime 
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 5777
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=46)

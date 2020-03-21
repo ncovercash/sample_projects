@@ -20,9 +20,9 @@ Find the product of the coefficients, a and b, for the quadratic expression that
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 -59231
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=27)

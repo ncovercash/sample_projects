@@ -8,9 +8,9 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 872187
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=36)

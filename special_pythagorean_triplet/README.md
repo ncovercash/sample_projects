@@ -10,9 +10,9 @@ Find the product abc.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 31875000
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=9)

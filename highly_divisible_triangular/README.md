@@ -20,9 +20,9 @@ What is the value of the first triangle number to have over five hundred divisor
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 76576500
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=12)

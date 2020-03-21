@@ -18,9 +18,9 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 983
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=26)

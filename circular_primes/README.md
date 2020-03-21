@@ -8,9 +8,9 @@ How many circular primes are there below one million?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 55
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=35)

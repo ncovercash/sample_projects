@@ -20,9 +20,9 @@ How many Lychrel numbers are there below ten‐thousand?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 249
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=55)

@@ -6,9 +6,9 @@ Considering natural numbers of the form, a^b, where a, b < 100, what is the maxi
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 972
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=56)

@@ -13,8 +13,8 @@ How many starting numbers below ten million will arrive at 89?
 
 <details> 
 <summary>Expected Result</summary>
-```
-```
+<pre>
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=92)

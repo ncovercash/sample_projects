@@ -107,9 +107,9 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 5537376230390876637302048746832985971773659831892672 => 5537376230
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=13)

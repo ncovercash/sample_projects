@@ -6,9 +6,9 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 906609
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=4)

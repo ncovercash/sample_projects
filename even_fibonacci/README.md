@@ -8,9 +8,9 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 4613732
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=2)

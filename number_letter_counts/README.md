@@ -8,9 +8,9 @@ NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 21124
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=17)

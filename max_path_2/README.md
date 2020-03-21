@@ -120,9 +120,9 @@ NOTE: This is a much more difficult version of a previous problem. It is not pos
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 7273
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=67)

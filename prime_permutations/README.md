@@ -8,9 +8,9 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 296962999629
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=49)

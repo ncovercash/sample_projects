@@ -25,9 +25,9 @@ What is the index of the first term in the Fibonacci sequence to contain 1000 di
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 4782
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=25)

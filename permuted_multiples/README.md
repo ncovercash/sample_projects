@@ -6,9 +6,9 @@ Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 142857
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=52)

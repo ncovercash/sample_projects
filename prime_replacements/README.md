@@ -8,9 +8,9 @@ Find the smallest prime which, by replacing part of the number (not necessarily 
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 121313 (diffs from output of program, as 1s need to be mapped in order to not have leading 0s)
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=51)

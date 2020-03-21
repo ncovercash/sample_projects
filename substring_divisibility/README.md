@@ -16,9 +16,9 @@ Find the sum of all 0 to 9 pandigital numbers with this property.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 16695334890
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=43)

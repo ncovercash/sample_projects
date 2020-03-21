@@ -6,9 +6,9 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 232792560
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=5)

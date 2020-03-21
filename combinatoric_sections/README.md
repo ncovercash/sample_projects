@@ -18,9 +18,9 @@ How many, not necessarily distinct, values of  nCr, for 1 ≤ n ≤ 100, are gre
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 4075
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=53)

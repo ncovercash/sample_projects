@@ -21,8 +21,8 @@ In the first one-thousand expansions, how many fractions contain a numerator wit
 
 <details> 
 <summary>Expected Result</summary>
-```
-```
+<pre>
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=57)

@@ -12,9 +12,9 @@ d1 × d10 × d100 × d1000 × d10000 × d100000 × d1000000
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 210
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=40)

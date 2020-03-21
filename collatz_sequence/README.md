@@ -16,9 +16,9 @@ NOTE: Once the chain starts the terms are allowed to go above one million.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 837799 in 525 steps
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=14)

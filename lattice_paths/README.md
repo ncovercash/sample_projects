@@ -8,9 +8,9 @@ How many such routes are there through a 20×20 grid?
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 137846528820
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=15)

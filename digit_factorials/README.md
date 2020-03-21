@@ -8,9 +8,9 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 40730
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=34)

@@ -12,9 +12,9 @@ Your task has been made easy, as the encryption key consists of three lower case
 
 <details> 
 <summary>Expected Result</summary>
-```
+<pre>
 107359
-```
+</pre>
 </details>
 
 [Original Problem](https://projecteuler.net/problem=59)
